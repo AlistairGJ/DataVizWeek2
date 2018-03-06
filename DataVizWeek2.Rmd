@@ -28,6 +28,8 @@ Picking between figure and background
 
 ```{r block1, echo=FALSE}
 library(ggplot2)
+library(magrittr)
+library(dplyr)
 ```
 
 #### Check GGPLOT website
@@ -49,11 +51,48 @@ You can also embed plots, for example:
 Cars <- read.csv('cars.csv')
 ```
 
+### Qplot
+- A good 'go to' function
 
 
+```{r block3, eval=TRUE}
+Cars$Sports <- Cars$Sports %>% factor(levels=c(0,1), 
+                                      labels=c('No','Yes'), ordered=TRUE)
+
+Cars$Sport_utility <- Cars$Sport_utility %>% factor(levels=c(0,1), 
+                                                    labels=c('No','Yes'), ordered=TRUE)
+
+Cars$Wagon <- Cars$Wagon %>% factor(levels=c(0,1), 
+                                    labels=c('No','Yes'), ordered=TRUE)
+
+Cars$Minivan <- Cars$Minivan %>% factor(levels=c(0,1), 
+                                        labels=c('No','Yes'), ordered=TRUE)
+
+Cars$Pickup <- Cars$Pickup %>% factor(levels=c(0,1),
+                                      labels=c('No','Yes'), ordered=TRUE)
+
+Cars$All_wheel_drive <- Cars$All_wheel_drive %>% factor(levels=c(0,1), 
+                                                        labels=c('No','Yes'), ordered=TRUE)
+
+Cars$Rear_wheel_drive <- Cars$Rear_wheel_drive %>% factor(levels=c(0,1), 
+                                                          labels=c('No','Yes'), ordered=TRUE)
+
+Cars$Cylinders <- Cars$Cylinders %>% as.factor()
+```
 
 
+```{r block4, eval=TRUE}
+qplot(x = Cylinders, y = Kilowatts, data = Cars, geom = "boxplot")
+```
 
+```{r block5, eval=TRUE}
+Alcohol <- read.csv('Student_alcohol_survey.csv')
+```
+
+```{r block6, eval=TRUE}
+p1 <- ggplot(data = Alcohol, mapping = aes(x = as.factor(Dalc), y = G3))
+plot(p1)
+```
 
 
 
