@@ -1,0 +1,5 @@
+"0","```r
+quantile(bdims$bic.gi)
+quantile(bdims$bic.gi[1:247])
+quantile(bdims$bic.gi[248:507])
+```"

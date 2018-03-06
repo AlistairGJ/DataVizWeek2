@@ -1,0 +1,7 @@
+"0","```r
+library(ggplot2)
+library(dplyr)
+setwd(\"/Users/alistairgj/R Scripts\")
+getwd()
+bdims <- read.csv(\"bdims.csv\")
+```"

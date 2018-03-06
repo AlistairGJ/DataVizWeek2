@@ -1,0 +1,5 @@
+"0","```r
+bdims$sex[c(1,247,248,507)]
+table(bdims$sex[1:247])
+table(bdims$sex[248:507])
+```"

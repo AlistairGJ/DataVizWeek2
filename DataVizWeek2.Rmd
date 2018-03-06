@@ -1,0 +1,63 @@
+---
+title: "Week2DataViz"
+subtitle: "AlistairGJ"
+output:
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Andy Kirk does NOT include 'strive for form over function' ANS 'Strive for form and function'
+- Health star rating ORDINAL
+-- Order to it - this is the main determining factor in how healthy something is
+
+- Kaiser Fung's trifecta check-up does NOT include the sample size (this falls under what does the data say)
+
+Picking between figure and background
+
+- GGPLOT2 - Hadley Wickham 
+& 'The Grammar of Graphics'
+-- Data Viz, layered approach
+-- Can very quickly add layers to create viz that we want!
+-- Learn theory and how to code
+-- 
+
+```{r block1, echo=FALSE}
+library(ggplot2)
+```
+
+#### Check GGPLOT website
+#### Buy GGPLOT book
+
+i. Data -> data
+ii. Geometric Objects -> geoms (aesthetics - the 'small bits and pieces')
+-- Points, lines, colour scales e.t.c.,
+iii. Statistical Transformations -> stats (are we vizualising the data or a statistical transformation of the data?)
+iv. Scales -> scale (breaking aesthetic up to tell us about a variable...)
+v. 
+vi. 
+
+-- Facet with a categorical variable
+
+You can also embed plots, for example:
+
+```{r block2, eval=TRUE}
+Cars <- read.csv('cars.csv')
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

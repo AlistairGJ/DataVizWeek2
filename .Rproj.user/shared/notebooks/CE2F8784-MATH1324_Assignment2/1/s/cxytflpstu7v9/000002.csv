@@ -1,0 +1,5 @@
+"0","```r
+median(bdims$bic.gi)
+median(bdims$bic.gi[1:247])
+median(bdims$bic.gi[248:507])
+```"
