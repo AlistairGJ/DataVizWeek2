@@ -1,2 +1,0 @@
-"0","p1 <- ggplot(data = Alcohol, mapping = aes(x = as.factor(Dalc), y = G3))"
-"0","plot(p1)"

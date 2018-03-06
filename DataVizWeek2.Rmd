@@ -91,7 +91,7 @@ Alcohol <- read.csv('Student_alcohol_survey.csv')
 
 ```{r block6, eval=TRUE}
 p1 <- ggplot(data = Alcohol, mapping = aes(x = as.factor(Dalc), y = G3))
-plot(p1)
+p1 + geom_boxplot()
 ```
 
 
