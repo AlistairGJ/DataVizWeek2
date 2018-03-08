@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Week2DataViz\"\nsubtitle: \"AlistairGJ\"\noutput:\n  html_notebook: default\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## Importing the Libraries\n\n```{r importingLibraries}\nlibrary(ggplot2)\nlibrary(magrittr)\nlibrary(dplyr)\nlibrary(readr)\nlibrary(rvest)\n```\n\n## \n\n```{r, echo=FALSE}\ncensus <- read_csv(\"table.csv\", skip = 10)\n```\n\n\n```{r, echo=FALSE}\nhead(census)\n```\n\n\n\n```{r, echo=FALSE}\ncensus <- read_csv(\"table.csv\", skip = 10, skip = )\n```\n\n\n\n```{r}\ncensus2 <- read.csv(\"table.csv\", sep=\";\")\n# Gives one column of 405 obs, where each ob is separated by commas\n```\n\n\n\n\n\n```{r}\ncensus <- read.table(\"table.csv\", sep=\",\", header = TRUE, stringsAsFactors = FALSE)\n```\n\n\nhttp://abs.gov.au/\n1. Census data\n2. Table Builder\n3. Open TableBuilder Guest\n4. 2016 Census - Employment, Income and Education (open table)\n5. Download Table as CSV\n6. File 'table.csv' added to working directory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n```{r, echo=FALSE}\ncensus <- read_csv(\"table2.csv\", sep=\",\")\n```\n\n```{r}\n#census2 <- read.csv(\"table2.csv\", sep=\";\")\n# Gives one column of 405 obs, where each ob is separated by commas\n```\n\n\n\n\n\n```{r}\ncensus <- read.table(\"table2.csv\", sep=\",\", header = TRUE)\n```\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "created" : 1520504469188.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1064757506",
+    "id" : "1D30E448",
+    "lastKnownWriteTime" : 1520508918,
+    "last_content_update" : 1520508918088,
+    "path" : "~/Documents/GitHub/DataVizWeek2/New.Rmd",
+    "project_path" : "New.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "last_setup_crc32" : "1050925Dbb338d19",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

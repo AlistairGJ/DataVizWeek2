@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1520506235985.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F0057326",
+    "lastKnownWriteTime" : 1520505088,
+    "last_content_update" : 1520506235985,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "48E071A7",
+        "caption" : "census2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=census2&cache_key=48E071A7",
+        "displayedObservations" : "405",
+        "environment" : "",
+        "object" : "census2",
+        "preview" : "0",
+        "totalObservations" : "405",
+        "variables" : "1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

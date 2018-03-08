@@ -1,0 +1,114 @@
+---
+title: "Week2DataViz"
+subtitle: "AlistairGJ"
+output:
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Importing the Libraries
+
+```{r importingLibraries}
+library(ggplot2)
+library(magrittr)
+library(dplyr)
+library(readr)
+library(rvest)
+```
+
+## 
+
+```{r, echo=FALSE}
+census <- read_csv("table.csv", skip = 10)
+```
+
+
+```{r, echo=FALSE}
+head(census)
+```
+
+
+
+```{r, echo=FALSE}
+census <- read_csv("table.csv", skip = 10, skip = )
+```
+
+
+
+```{r}
+census2 <- read.csv("table.csv", sep=";")
+# Gives one column of 405 obs, where each ob is separated by commas
+```
+
+
+
+
+
+```{r}
+census <- read.table("table.csv", sep=",", header = TRUE, stringsAsFactors = FALSE)
+```
+
+
+http://abs.gov.au/
+1. Census data
+2. Table Builder
+3. Open TableBuilder Guest
+4. 2016 Census - Employment, Income and Education (open table)
+5. Download Table as CSV
+6. File 'table.csv' added to working directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r, echo=FALSE}
+census <- read_csv("table2.csv", sep=",")
+```
+
+```{r}
+#census2 <- read.csv("table2.csv", sep=";")
+# Gives one column of 405 obs, where each ob is separated by commas
+```
+
+
+
+
+
+```{r}
+census <- read.table("table2.csv", sep=",", header = TRUE)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

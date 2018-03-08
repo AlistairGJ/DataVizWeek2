@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Week2DataViz\"\nsubtitle: \"AlistairGJ\"\noutput:\n  html_notebook: default\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## R Markdown\n\nAndy Kirk does NOT include 'strive for form over function' ANS 'Strive for form and function'\n- Health star rating ORDINAL\n-- Order to it - this is the main determining factor in how healthy something is\n\n- Kaiser Fung's trifecta check-up does NOT include the sample size (this falls under what does the data say)\n\nPicking between figure and background\n\n- GGPLOT2 - Hadley Wickham \n& 'The Grammar of Graphics'\n-- Data Viz, layered approach\n-- Can very quickly add layers to create viz that we want!\n-- Learn theory and how to code\n-- \n\n```{r block1, echo=FALSE}\nlibrary(ggplot2)\nlibrary(magrittr)\nlibrary(dplyr)\n```\n\n#### Check GGPLOT website\n#### Buy GGPLOT book\n\ni. Data -> data\nii. Geometric Objects -> geoms (aesthetics - the 'small bits and pieces')\n-- Points, lines, colour scales e.t.c.,\niii. Statistical Transformations -> stats (are we vizualising the data or a statistical transformation of the data?)\niv. Scales -> scale (breaking aesthetic up to tell us about a variable...)\nv. \nvi. \n\n-- Facet with a categorical variable\n\nYou can also embed plots, for example:\n\n```{r block2, eval=TRUE}\nCars <- read.csv('cars.csv')\n```\n\n### Qplot\n- A good 'go to' function\n\n\n```{r block3, eval=TRUE}\nCars$Sports <- Cars$Sports %>% factor(levels=c(0,1), \n                                      labels=c('No','Yes'), ordered=TRUE)\n\nCars$Sport_utility <- Cars$Sport_utility %>% factor(levels=c(0,1), \n                                                    labels=c('No','Yes'), ordered=TRUE)\n\nCars$Wagon <- Cars$Wagon %>% factor(levels=c(0,1), \n                                    labels=c('No','Yes'), ordered=TRUE)\n\nCars$Minivan <- Cars$Minivan %>% factor(levels=c(0,1), \n                                        labels=c('No','Yes'), ordered=TRUE)\n\nCars$Pickup <- Cars$Pickup %>% factor(levels=c(0,1),\n                                      labels=c('No','Yes'), ordered=TRUE)\n\nCars$All_wheel_drive <- Cars$All_wheel_drive %>% factor(levels=c(0,1), \n                                                        labels=c('No','Yes'), ordered=TRUE)\n\nCars$Rear_wheel_drive <- Cars$Rear_wheel_drive %>% factor(levels=c(0,1), \n                                                          labels=c('No','Yes'), ordered=TRUE)\n\nCars$Cylinders <- Cars$Cylinders %>% as.factor()\n```\n\n\n```{r block4, eval=TRUE}\nqplot(x = Cylinders, y = Kilowatts, data = Cars, geom = \"boxplot\")\n```\n\n```{r block5, eval=TRUE}\nAlcohol <- read.csv('Student_alcohol_survey.csv')\n```\n\n```{r block6, eval=TRUE}\np1 <- ggplot(data = Alcohol, mapping = aes(x = as.factor(Dalc), y = G3))\np1 + geom_boxplot()\n\nhttps://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data \n\n\n\n```\n\n\n\n\n\n\n\n",
+    "created" : 1520318298742.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1070607901",
+    "id" : "D272279C",
+    "lastKnownWriteTime" : 1520322795,
+    "last_content_update" : 1520504448270,
+    "path" : "~/Documents/GitHub/DataVizWeek2/DataVizWeek2.Rmd",
+    "project_path" : "DataVizWeek2.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "last_setup_crc32" : "",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

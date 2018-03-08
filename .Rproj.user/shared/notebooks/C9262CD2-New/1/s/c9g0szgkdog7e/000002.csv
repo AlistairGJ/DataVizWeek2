@@ -1,0 +1,2 @@
+"0","census2 <- read.csv(""table2.csv"", sep="";"")"
+"0","# Gives one column of 405 obs, where each ob is separated by commas"

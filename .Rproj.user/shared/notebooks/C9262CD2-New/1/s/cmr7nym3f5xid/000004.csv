@@ -1,0 +1,1 @@
+"0","census <- read.table(""table.csv"", sep="","", header = TRUE, stringsAsFactors = FALSE)"

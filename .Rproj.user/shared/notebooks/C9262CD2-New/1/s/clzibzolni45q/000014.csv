@@ -1,0 +1,16 @@
+"0","census <- read_csv(""table.csv"", skip = 10)"
+"2","Missing column names filled in: 'X1' [1], 'X25' [25]"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  X1 = col_character(),
+  `AGE5P - Age in Five Year Groups` = col_character(),
+  X25 = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"2","number of columns of result is not a multiple of vector length (arg 1)"
+"2","3 parsing failures.
+row # A tibble: 3 x 5 col     row   col   expected    actual        file expected   <int> <chr>      <chr>     <chr>       <chr> actual 1     1  <NA> 25 columns 3 columns 'table.csv' file 2    20  <NA> 25 columns 2 columns 'table.csv' row 3    21  <NA> 25 columns 1 columns 'table.csv'
+"
