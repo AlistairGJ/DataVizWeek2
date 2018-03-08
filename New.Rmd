@@ -5,6 +5,17 @@ output:
   html_notebook: default
 ---
 
+## Group/Individual Details
+
+* Alistair Grevis-James (s3644119)
+
+## Executive Statement
+
+In your own words, provide a brief summary of the investigation. Explain the aim of the investigation, the procedure, sample, variables, main findings and conclusions. Write this section last after you have performed hypothesis testing. (Word count Max: 300 words)
+
+### Introduction & Hypothesis
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -25,15 +36,24 @@ library(rvest)
 census <- read_csv("table.csv", skip = 10)
 ```
 
-
 ```{r, echo=FALSE}
 head(census)
 ```
 
+* Checking the size
+```{r}
+dim(census)
+```
+
+* Check first column (nomenclature?)
+```{r}
+c(census[1:21,1])
+```
 
 
 ```{r, echo=FALSE}
-census <- read_csv("table.csv", skip = 10, skip = )
+row1 <- census[,1:25]
+print(row1)
 ```
 
 
