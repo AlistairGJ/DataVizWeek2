@@ -1,0 +1,4 @@
+"0","plot + geom_point()
+"
+"2","Error: geom_point requires the following missing aesthetics: x, y
+"

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"MATH2270/MATH2237 Assignment 1\"\nsubtitle: \"Turning Tables\"\noutput: html_notebook\n---\n\n### Student Details\n\n* Alistair Grevis-James (s3644119)\n\n```{r, message=FALSE, warning=FALSE, include=FALSE}\nlibrary(ggplot2)\nlibrary(magrittr)\nlibrary(dplyr)\nlibrary(readr)\nlibrary(rvest)\n```\n\n### Data Table\n\nProvide a short description and link to the data table selected for this assignment. \n\n# Extra\n---\n```{r, echo=FALSE}\ncensus <- read_csv(\"table.csv\", skip = 10)\n```\n\n```{r, echo=FALSE}\nhead(census, n = 5)\n```\n\n```{r, echo=FALSE}\ntail(census, n = 5)\n```\n\n```{r}\n# Checking the size\ndim(census)\n```\n\n```{r}\n# Display the first attribute as a vector\nc(census[1:21,1])\n```\n\n```{r, echo=FALSE}\nnewX1 = c(NA, \"Male\", \"Male\", \"Male\", \"Male\", \"Male\", \"Male\", \n                \"Female\", \"Female\", \"Female\", \"Female\", \"Female\", \"Female\", \n                \"Total\", \"Total\", \"Total\", \"Total\", \"Total\", \"Total\", NA, NA)\n```\n\n```{r, echo=FALSE}\ncensus$X1 <- newX1\n```\n\n```{r}\n# Display the first attribute as a vector\nc(census[1:21,1])\n```\n\n```{r}\n# Display the header as a vector\nheader <- c(census[0, 1:25])\nlist <- c(sapply(census, names))\n# Use a function for this???\nheaderNew <- c(\"M, F or Total\", \"EETP Engagement in Employment, Education and Training\",\n               \"Age 0-4 years\", \"Age 5-9 years\", \"Age 10-14 years\", \"Age 15-19 years\", \"Age 20-24 years\",\n               \"Age 25-29 years\", \"Age 30-34 years\", \"Age 35-39 years\", \"Age 40-44 years\", \"Age 45-49 years\",\n               \"Age 50-54 years\", \"Age 55-59 years\", \"Age 60-64 years\", \"Age 65-69 years\", \"Age 70-74 years\",\n               \"Age 75-79 years\", \"Age 80-84 years\", \"Age 85-89 years\", \"Age 90-94 years\", \"Age 95-99 years\", \n               \"100 years and over\", \"Total\", NA)\nc(sapply(census, names))\n```\n\n```{r}\ncolnames(census) <- headerNew\n```\n\nhttp://earlh.com/blog/2009/06/29/column-names-of-r-data-frames/\nhttps://stackoverflow.com/questions/39840988/getting-the-column-names-of-a-data-frame-with-sapply\n\n\n```{r}\ncensus <- census[-c(1, 20, 21), ]\n```\n---\n\n### Code\n\nShow your code used to create the data visualisation. \n\n```{r}\n# Droping rows\ncensusViz <- census[-c(3, 5, 6, 9, 11, 12, 13, 14, 15, 16, 17, 18), -c(3, 4, 5, 24, 25)]\n```\n\n```{r}\n# VIZ\nplot <- ggplot(data = censusViz)\nplot + geom_point()\n```\n\n### Visualisation\n\nReport the visualisation here.\n\n### Caption\n\nProvide a short caption summaring the insight from the data visualisation. \n\n(200 words max!)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "created" : 1520599327374.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "68309379",
+    "id" : "1C31694E",
+    "lastKnownWriteTime" : 1520604794,
+    "last_content_update" : 1520605157323,
+    "path" : "~/Documents/GitHub/DataVizAssignment1/MATH2270_MATH2237_Assignment_1_Template.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "chunk_output_type" : "inline"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
